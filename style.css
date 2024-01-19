@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Color+Emoji&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --bg-color : #130202;
+    --main-color: #0bb0f1;
+    --text-color: #383434;
+    --second-text-color: #a8a8a8;
+    --white-color: #fff;
+    --cover-color:linear-gradient(45deg, #0bb0f1, #0f0f0f);
+    --pages-color: linear-gradient(90deg, #fff, #b2b1b1);
+    --border: 125rem solid #0bb0f1;
+    --box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
