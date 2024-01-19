@@ -17,8 +17,42 @@
     --text-color: #383434;
     --second-text-color: #a8a8a8;
     --white-color: #fff;
-    --cover-color:linear-gradient(45deg, #0bb0f1, #0f0f0f);
+    --cover-color:linear-gradient(45deg, #0bb0f1, #4c4b4b);
     --pages-color: linear-gradient(90deg, #fff, #b2b1b1);
     --border: 125rem solid #0bb0f1;
     --box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--bg-color);
+}
+
+.wrapper{
+    position: relative;
+    width: 66rem;
+    height: 45rem;
+}
+
+.cover {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: var(--cover-color);
+    box-shadow: var(--box-shadow);
+    border-top-left-radius: .6rem;
+    border-bottom-left-radius: .6rem;
+    transform-origin: right;
+}
+
+.cover.cover-left{
+    z-index: -1;
+}
+
+.cover.cover-right.turn{
+    transform:rotateY(180deg);
+    
 }
